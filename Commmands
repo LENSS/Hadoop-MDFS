@@ -1,0 +1,26 @@
+1. Hadoop-MDFS  package-name
+2. export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
+3. ant to build hadoop package
+4. conf folder- master, slaves , core-site.xml, hdfs-site.xml, mapred-site.xml
+5. bin folder , start-all.sh, start-dfs.sh,start-mapred.sh
+5. username: hadoop password: hadoop
+6. To start all daemons - execute bin/start-all.sh
+
+
+src/hdfs/org/apache/hadoop/mdfs/utils/MDFSShell.java
+
+To take MDFS SHELL
+bin/hadoop mdfs
+
+
+1.-createFromLocalFile /home/johnugeorge/TestWC /dir5/TestWC
+2. -readFile <location> <true(optional)>
+
+bin/hadoop jar hadoop-*examples*.jar wordcount /dir5/ /dir1
+
+
+
+bin/hadoop jar hadoop-examples-1.2.1.jar teragen 100000 /user/hduser/terasort-input
+
+bin/hadoop jar hadoop-*examples*.jar terasort /user/hduser/terasort-input /user/hduser/terasort-output
+

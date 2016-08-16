@@ -1,0 +1,20 @@
+java -classpath "./:../:../../lib/*" org.apache.hadoop.mdfs.test.TestDeleteAllFiles
+
+
+git config --global credential.helper cache
+
+
+git config --global credential.helper "cache --timeout=3600000"
+
+
+To take MDFS SHELL
+bin/hadoop mdfs
+
+
+-createFromLocalFile /home/johnugeorge/TestWC /dir5/TestWC
+
+bin/hadoop jar hadoop-*examples*.jar wordcount /dir5/ /dir1
+
+bin/hadoop jar hadoop-examples-1.2.1.jar teragen 100000 /user/hduser/terasort-input
+
+bin/hadoop jar hadoop-*examples*.jar terasort /user/hduser/terasort-input /user/hduser/terasort-output
